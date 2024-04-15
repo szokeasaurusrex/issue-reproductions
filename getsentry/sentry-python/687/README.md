@@ -14,7 +14,7 @@ Reproduction of getsentry/sentry-python#687. Setup based on [reproduction](https
    >>> from tasks import my_task
    >>> my_task.apply_async()
    ```
-6. Observe (in the Celery worker terminal) that the task error occurs, but the envelope is not immediately.
+6. Observe (in the Celery worker terminal) that the task error occurs, but the envelope is not immediately sent to Sentry.
 7. Run `my_task.apply_async()` in the Python interpreter again. Notice that both error events are sent immediately in the Celery worker window.
 
 If `my_task.apply_async()` is run only once, it still appears that the error event eventually gets sent to Sentry. The event is sent after a delay, or after pressing Ctrl-C.
