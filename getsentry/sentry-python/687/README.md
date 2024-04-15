@@ -1,4 +1,4 @@
-Reproduction of getsentry/sentry#687. Setup based on [reproduction](https://github.com/getsentry/sentry-python/issues/687#issuecomment-1811523620) provided by @RobbieClarken.
+Reproduction of getsentry/sentry-python#687. Setup based on [reproduction](https://github.com/getsentry/sentry-python/issues/687#issuecomment-1811523620) provided by @RobbieClarken.
 
 ## Reprouction steps
 
