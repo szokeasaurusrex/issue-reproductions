@@ -1,4 +1,4 @@
-Reproduction of getsentry/sentry#2983.
+Reproduction of getsentry/sentry-python#2983.
 
 ## Reproduction steps
 
