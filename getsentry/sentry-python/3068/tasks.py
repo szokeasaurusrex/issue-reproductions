@@ -6,6 +6,7 @@ import sentry_sdk
 
 def print_transaction(event, _):
     print(f"Sending transaction: {event}")
+    return event
 
 
 app = Celery(
