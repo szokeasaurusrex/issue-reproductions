@@ -13,7 +13,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 import sentry_sdk
 from pathlib import Path
 
-sentry_sdk.init(enable_tracing=True)
+sentry_sdk.init(enable_tracing=True, debug=True)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
