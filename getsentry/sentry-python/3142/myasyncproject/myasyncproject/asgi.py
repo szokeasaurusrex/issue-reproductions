@@ -27,3 +27,8 @@ async def async_view(request):
 async def error(request):
     await asyncio.sleep(0.6)
     raise Exception("error")
+
+
+def sync_view_in_asgi(request):
+    print("sync_view_in_asgi")
+    return HttpResponse("Hello, world!")

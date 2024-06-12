@@ -28,6 +28,10 @@ echo "Sending error request..."
 curl http://localhost:8000/error/ > /dev/null
 sleep 2
 
+echo "Sending request to sync view..."
+curl http://localhost:8000/sync/ > /dev/null
+sleep 2
+
 echo "Stopping server..."
 kill %1
 sleep 2
